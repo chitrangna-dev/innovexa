@@ -1,3 +1,7 @@
+// ==========================================
+// BIJLIBANK - FIREBASE CONFIG
+// ==========================================
+
 // Firebase App
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
 
@@ -8,7 +12,10 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
 
 
-// Your Firebase configuration
+// ==========================================
+// FIREBASE CONFIGURATION
+// ==========================================
+
 const firebaseConfig = {
     apiKey: "AIzaSyCJleSYThFf5-xOZyxKAklmSBvAof5-hXg",
     authDomain: "innovexnor.firebaseapp.com",
@@ -20,21 +27,29 @@ const firebaseConfig = {
 };
 
 
-// Initialize Firebase
+// ==========================================
+// INITIALIZE FIREBASE
+// ==========================================
+
 const app = initializeApp(firebaseConfig);
 
 
-// Initialize Authentication
+// ==========================================
+// INITIALIZE AUTHENTICATION
+// ==========================================
+
 const auth = getAuth(app);
 
 
-// Initialize Firestore
+// ==========================================
+// INITIALIZE FIRESTORE
+// ==========================================
+
 const db = getFirestore(app);
 
 
-// Export
-export {
-    app,
-    auth,
-    db
-};
+// ==========================================
+// EXPORT
+// ==========================================
+
+export { app, auth, db };
