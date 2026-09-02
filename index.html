@@ -1,1 +1,1461 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="BijliBank - Know where your electricity goes before your bill arrives."
+    >
+
+    <title>BijliBank — Smart Electricity Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <div class="site-shell">
+
+        <!-- =========================
+             NAVBAR
+        ========================== -->
+
+        <header class="topbar">
+
+            <!-- Logo -->
+            <a href="#" class="brand" data-section="dashboard">
+
+                <span class="brand-mark">ϟ</span>
+
+                <span class="brand-text">
+                    <strong>BijliBank</strong>
+                    <small>Know. Save. Control.</small>
+                </span>
+
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="nav">
+
+                <button
+                    class="nav-link active"
+                    data-section="dashboard"
+                >
+                    Home
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-section="scan"
+                >
+                    Scan Device
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-section="appliances"
+                >
+                    Appliances
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-section="analytics"
+                >
+                    Analytics
+                </button>
+
+                <button
+                    class="nav-link"
+                    data-section="prediction"
+                >
+                    Bill Prediction
+                </button>
+
+            </nav>
+
+
+            <!-- Right side -->
+            <div class="top-actions">
+
+                <button
+                    class="icon-btn"
+                    aria-label="Notifications"
+                >
+                    ♧
+                </button>
+
+                <button
+                    class="profile"
+                    aria-label="Profile"
+                >
+                    C
+                </button>
+
+                <button
+                    class="menu-btn"
+                    aria-label="Menu"
+                >
+                    ⋮
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main>
+
+
+            <!-- ==================================================
+                 DASHBOARD
+            =================================================== -->
+
+            <section
+                id="dashboard"
+                class="page active-page"
+            >
+
+                <!-- Hero -->
+                <div class="hero">
+
+                    <div class="hero-content">
+
+                        <p class="eyebrow">
+                            SMART ELECTRICITY MANAGEMENT
+                        </p>
+
+                        <h1>
+                            Know where your
+                            <br>
+                            <em>electricity goes.</em>
+                        </h1>
+
+                        <p class="hero-copy">
+                            Understand your appliances, predict your
+                            electricity bill, and find simple ways to
+                            save before the bill arrives.
+                        </p>
+
+
+                        <div class="hero-actions">
+
+                            <button
+                                class="primary"
+                                data-section="scan"
+                            >
+                                Scan a device
+                                <span>↗</span>
+                            </button>
+
+                            <button
+                                class="text-btn"
+                                data-section="analytics"
+                            >
+                                View analytics →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Today's usage -->
+                    <div class="hero-card">
+
+                        <span class="card-label">
+                            TODAY'S USAGE
+                        </span>
+
+                        <strong>
+                            18.6
+                            <small>kWh</small>
+                        </strong>
+
+                        <div class="mini-line">
+                            <span style="width:68%"></span>
+                        </div>
+
+                        <p>
+                            12% higher than yesterday
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     STAT CARDS
+                ========================== -->
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <span>Today's cost</span>
+
+                        <strong>
+                            ₹68.45
+                        </strong>
+
+                        <small>
+                            ↑ 8% vs yesterday
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span>This month</span>
+
+                        <strong>
+                            256.4
+                            <i>kWh</i>
+                        </strong>
+
+                        <small>
+                            ↑ 15% vs last month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span>Estimated bill</span>
+
+                        <strong>
+                            ₹1,245
+                        </strong>
+
+                        <small>
+                            ₹1,180 last month
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card green-card">
+
+                        <span>Potential saving</span>
+
+                        <strong>
+                            ₹320
+                        </strong>
+
+                        <small>
+                            based on your usage
+                        </small>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- =========================
+                     USAGE SECTION
+                ========================== -->
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            YOUR ELECTRICITY
+                        </p>
+
+                        <h2>
+                            Where is it going?
+                        </h2>
+
+                    </div>
+
+
+                    <button class="select-btn">
+                        This week ▾
+                    </button>
+
+                </div>
+
+
+
+                <div class="content-grid">
+
+
+                    <!-- Usage Chart -->
+                    <article class="panel chart-panel">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Usage overview
+                            </h3>
+
+                            <span>
+                                kWh
+                            </span>
+
+                        </div>
+
+
+                        <div class="chart">
+
+                            <div class="grid-line g1"></div>
+                            <div class="grid-line g2"></div>
+                            <div class="grid-line g3"></div>
+
+
+                            <svg
+                                viewBox="0 0 700 220"
+                                preserveAspectRatio="none"
+                            >
+
+                                <path
+                                    d="M0,155
+                                    C70,145 80,175 145,142
+                                    S235,82 300,112
+                                    S370,150 430,95
+                                    S510,65 570,100
+                                    S640,155 700,125"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                />
+
+                            </svg>
+
+
+                            <div class="x-axis">
+
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Top appliances -->
+                    <article class="panel">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Top consuming appliances
+                            </h3>
+
+                            <button
+                                class="link-btn"
+                                data-section="appliances"
+                            >
+                                View all
+                            </button>
+
+                        </div>
+
+
+                        <div class="appliance-bars">
+
+
+                            <div>
+
+                                <span>
+                                    Air Conditioner
+                                </span>
+
+                                <b>
+                                    7.6 kWh
+                                </b>
+
+                                <div>
+                                    <i style="width:88%"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Geyser
+                                </span>
+
+                                <b>
+                                    4.2 kWh
+                                </b>
+
+                                <div>
+                                    <i style="width:58%"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Refrigerator
+                                </span>
+
+                                <b>
+                                    2.8 kWh
+                                </b>
+
+                                <div>
+                                    <i style="width:39%"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    Washing Machine
+                                </span>
+
+                                <b>
+                                    1.6 kWh
+                                </b>
+
+                                <div>
+                                    <i style="width:23%"></i>
+                                </div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <span>
+                                    LED TV
+                                </span>
+
+                                <b>
+                                    1.2 kWh
+                                </b>
+
+                                <div>
+                                    <i style="width:17%"></i>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- =========================
+                     INSIGHT
+                ========================== -->
+
+                <div class="insight">
+
+                    <div class="insight-symbol">
+                        ϟ
+                    </div>
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            BIJLIBANK INSIGHT
+                        </p>
+
+                        <h3>
+                            Your AC is consuming more than usual.
+                        </h3>
+
+                        <p>
+                            Reducing its usage by 1 hour/day could
+                            save approximately
+                            <strong>₹320/month.</strong>
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="light-btn"
+                        data-section="analytics"
+                    >
+                        See how to save →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 SCAN DEVICE
+            =================================================== -->
+
+            <section
+                id="scan"
+                class="page"
+            >
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        SCANIQ
+                    </p>
+
+                    <h1>
+                        Scan it. Know it.
+                        <br>
+                        <em>Save it.</em>
+                    </h1>
+
+                    <p>
+                        Take a photo of your appliance or its
+                        rating label. BijliBank identifies the
+                        device and estimates its electricity cost.
+                    </p>
+
+                </div>
+
+
+
+                <div class="scan-layout">
+
+
+                    <!-- Scanner -->
+                    <div class="scan-box">
+
+                        <div class="scan-corners"></div>
+
+                        <div class="scan-icon">
+                            ϟ
+                        </div>
+
+                        <h2>
+                            Scan your appliance
+                        </h2>
+
+                        <p>
+                            Upload a clear photo of the appliance
+                            or its power-rating sticker.
+                        </p>
+
+
+                        <label class="primary upload-label">
+
+                            Choose photo
+                            <span>↗</span>
+
+                            <input
+                                id="devicePhoto"
+                                type="file"
+                                accept="image/*"
+                            >
+
+                        </label>
+
+
+                        <button
+                            class="secondary"
+                            id="demoScan"
+                        >
+                            Try demo scan
+                        </button>
+
+
+                        <div
+                            id="scanStatus"
+                            class="scan-status"
+                        >
+                            No image selected
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- How it works -->
+                    <div class="scan-info">
+
+                        <p class="eyebrow">
+                            HOW IT WORKS
+                        </p>
+
+
+                        <div class="step">
+
+                            <b>01</b>
+
+                            <span>
+
+                                <strong>
+                                    Identify
+                                </strong>
+
+                                <small>
+                                    AI/OCR reads the appliance
+                                    and rating label.
+                                </small>
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="step">
+
+                            <b>02</b>
+
+                            <span>
+
+                                <strong>
+                                    Estimate
+                                </strong>
+
+                                <small>
+                                    Power rating × usage gives
+                                    estimated kWh.
+                                </small>
+
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="step">
+
+                            <b>03</b>
+
+                            <span>
+
+                                <strong>
+                                    Calculate
+                                </strong>
+
+                                <small>
+                                    See daily, monthly and
+                                    extra-hour cost.
+                                </small>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Scan Result -->
+
+                <div
+                    id="scanResult"
+                    class="result-card hidden"
+                >
+
+                    <div class="result-title">
+
+                        <span class="device-dot"></span>
+
+                        <div>
+
+                            <p class="eyebrow">
+                                DEVICE DETECTED
+                            </p>
+
+                            <h2>
+                                Split AC · 1.5 Ton
+                            </h2>
+
+                        </div>
+
+                        <span class="tag">
+                            Detected
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="result-grid">
+
+                        <div>
+
+                            <span>
+                                Power rating
+                            </span>
+
+                            <strong>
+                                1500 W
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Daily usage
+                            </span>
+
+                            <strong>
+
+                                <input
+                                    id="hours"
+                                    type="number"
+                                    value="6"
+                                    min="1"
+                                    max="24"
+                                >
+
+                                hrs
+
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Daily consumption
+                            </span>
+
+                            <strong id="dailyKwh">
+                                9.0 kWh
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Estimated monthly cost
+                            </span>
+
+                            <strong id="monthlyCost">
+                                ₹820
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="extra-use">
+
+                        <span>
+                            What if you use it 2 hours extra?
+                        </span>
+
+                        <strong id="extraCost">
+                            + ₹9.12/day
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        class="primary full"
+                        id="addDevice"
+                    >
+                        Add to my appliances →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 APPLIANCES
+            =================================================== -->
+
+            <section
+                id="appliances"
+                class="page"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            MY DEVICES
+                        </p>
+
+                        <h1>
+                            Every appliance.
+                            <br>
+                            <em>One place.</em>
+                        </h1>
+
+                    </div>
+
+
+                    <button
+                        class="primary"
+                        data-section="scan"
+                    >
+                        + Scan device
+                    </button>
+
+                </div>
+
+
+
+                <div class="device-grid">
+
+
+                    <article class="device-card">
+
+                        <div class="device-icon">
+                            ❄
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Air Conditioner
+                            </h3>
+
+                            <p>
+                                1.5 Ton · 1500 W
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            7.6
+                            <small>kWh</small>
+                        </strong>
+
+                        <span>
+                            ₹27.36/day
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="device-card">
+
+                        <div class="device-icon">
+                            ♨
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Geyser
+                            </h3>
+
+                            <p>
+                                2000 W
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            4.2
+                            <small>kWh</small>
+                        </strong>
+
+                        <span>
+                            ₹15.12/day
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="device-card">
+
+                        <div class="device-icon">
+                            ▣
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Refrigerator
+                            </h3>
+
+                            <p>
+                                180 W · 5 Star
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            2.8
+                            <small>kWh</small>
+                        </strong>
+
+                        <span>
+                            ₹10.08/day
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="device-card">
+
+                        <div class="device-icon">
+                            ◫
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Washing Machine
+                            </h3>
+
+                            <p>
+                                700 W
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            1.6
+                            <small>kWh</small>
+                        </strong>
+
+                        <span>
+                            ₹5.76/day
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="device-card">
+
+                        <div class="device-icon">
+                            ▭
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                LED TV
+                            </h3>
+
+                            <p>
+                                100 W
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            1.2
+                            <small>kWh</small>
+                        </strong>
+
+                        <span>
+                            ₹4.32/day
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- Add appliance -->
+
+                    <article
+                        class="device-card add-card"
+                        data-section="scan"
+                    >
+
+                        <div class="plus">
+                            +
+                        </div>
+
+                        <h3>
+                            Add appliance
+                        </h3>
+
+                        <p>
+                            Scan a new device
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 ANALYTICS
+            =================================================== -->
+
+            <section
+                id="analytics"
+                class="page"
+            >
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        USAGE ANALYTICS
+                    </p>
+
+                    <h1>
+                        Turn numbers into
+                        <br>
+                        <em>better decisions.</em>
+                    </h1>
+
+                    <p>
+                        See your patterns, identify expensive
+                        appliances and understand where savings
+                        are possible.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Analytics stats -->
+
+                <div class="analytics-stats">
+
+                    <div>
+
+                        <span>
+                            Total usage
+                        </span>
+
+                        <strong>
+                            256.4 kWh
+                        </strong>
+
+                        <small>
+                            ↑ 15% vs April
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Average/day
+                        </span>
+
+                        <strong>
+                            8.54 kWh
+                        </strong>
+
+                        <small>
+                            ₹30.74/day
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Highest day
+                        </span>
+
+                        <strong>
+                            31.2 kWh
+                        </strong>
+
+                        <small>
+                            26 May
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="content-grid">
+
+
+                    <!-- Monthly chart -->
+
+                    <article class="panel large-chart">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Monthly consumption
+                            </h3>
+
+                            <span>
+                                May 2026
+                            </span>
+
+                        </div>
+
+
+                        <div class="bars">
+
+                            <i style="height:35%"></i>
+                            <i style="height:52%"></i>
+                            <i style="height:42%"></i>
+                            <i style="height:68%"></i>
+                            <i style="height:58%"></i>
+                            <i style="height:78%"></i>
+                            <i style="height:63%"></i>
+                            <i style="height:88%"></i>
+                            <i style="height:72%"></i>
+                            <i style="height:60%"></i>
+                            <i style="height:82%"></i>
+                            <i style="height:94%"></i>
+
+                        </div>
+
+
+                        <div class="bar-labels">
+
+                            <span>1</span>
+                            <span>5</span>
+                            <span>10</span>
+                            <span>15</span>
+                            <span>20</span>
+                            <span>25</span>
+                            <span>31</span>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Category -->
+
+                    <article class="panel">
+
+                        <div class="panel-head">
+
+                            <h3>
+                                Consumption split
+                            </h3>
+
+                        </div>
+
+
+                        <div class="donut">
+
+                            <div>
+
+                                <strong>
+                                    256.4
+                                </strong>
+
+                                <span>
+                                    kWh
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <ul class="legend">
+
+                            <li>
+                                <i></i>
+                                Cooling
+                                <b>40%</b>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                Heating
+                                <b>22%</b>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                Refrigeration
+                                <b>15%</b>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                Laundry
+                                <b>9%</b>
+                            </li>
+
+                            <li>
+                                <i></i>
+                                Others
+                                <b>14%</b>
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 BILL PREDICTION
+            =================================================== -->
+
+            <section
+                id="prediction"
+                class="page"
+            >
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        BILL PREDICTION
+                    </p>
+
+                    <h1>
+                        See the bill
+                        <br>
+                        <em>before it comes.</em>
+                    </h1>
+
+                    <p>
+                        We use your recent usage trend to estimate
+                        your upcoming electricity bill.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Prediction -->
+
+                <div class="prediction-card">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            ESTIMATED MONTHLY BILL
+                        </p>
+
+                        <h2>
+                            ₹1,245
+                            <span>– ₹1,350</span>
+                        </h2>
+
+                        <p>
+                            Most likely range based on your
+                            current usage.
+                        </p>
+
+                    </div>
+
+
+                    <div class="meter">
+
+                        <div class="meter-fill"></div>
+
+                        <div class="meter-labels">
+
+                            <span>
+                                ₹1,000
+                            </span>
+
+                            <span>
+                                ₹1,245
+                            </span>
+
+                            <span>
+                                ₹1,500
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Bill breakdown -->
+
+                <div class="bill-breakdown">
+
+                    <h3>
+                        What makes up your bill?
+                    </h3>
+
+
+                    <div>
+
+                        <span>
+                            Energy charges
+                        </span>
+
+                        <strong>
+                            ₹945
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Fixed charges
+                        </span>
+
+                        <strong>
+                            ₹130
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Taxes & surcharges
+                        </span>
+
+                        <strong>
+                            ₹170
+                        </strong>
+
+                    </div>
+
+
+                    <div class="total">
+
+                        <span>
+                            Estimated total
+                        </span>
+
+                        <strong>
+                            ₹1,245
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Saving tip -->
+
+                <div class="tip-box">
+
+                    <span>
+                        💡
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Small change, real saving.
+                        </strong>
+
+                        <p>
+                            If you reduce AC usage by 1 hour/day,
+                            your estimated bill could fall by
+                            around ₹180 this month.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <span>
+                ϟ BijliBank
+            </span>
+
+            <span>
+                Know where your electricity goes
+                before your bill arrives.
+            </span>
+
+            <span>
+                © 2026
+            </span>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
