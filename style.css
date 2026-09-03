@@ -2541,3 +2541,35 @@ footer button:hover {
         height: 34px;
     }
 }
+<div id="electric-loader">
+
+    <div class="electric-loader-content">
+
+        <div class="loader-board">
+            <div class="loader-socket socket-one"></div>
+            <div class="loader-socket socket-two"></div>
+        </div>
+
+        <div class="loader-plug">
+
+            <div class="plug-head"></div>
+
+            <div class="plug-pin one"></div>
+            <div class="plug-pin two"></div>
+
+            <div class="plug-wire"></div>
+
+        </div>
+
+        <div class="loader-spark">ϟ</div>
+
+        <div class="loader-glow"></div>
+
+        <div class="loader-logo">
+            <strong>BijliBank</strong>
+            <span>KNOW WHERE YOUR ELECTRICITY GOES</span>
+        </div>
+
+    </div>
+
+</div>
