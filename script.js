@@ -2084,3 +2084,10 @@ checkExistingLogin();
 ========================================================= */
 
 calculateScanResult();
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("electric-loader")
+            ?.classList.add("hide");
+    }, 2300);
+});
