@@ -2535,41 +2535,342 @@ footer button:hover {
         width: 34px;
         height: 34px;
     }
+   /* =========================================================
+   BIJLIBANK — ELECTRICITY START LOADER
+   ========================================================= */
+
+#electric-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    background: var(--cream);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+#electric-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* Loader area */
+
+.electric-loader {
+    position: relative;
+
+    width: 360px;
+    height: 250px;
+}
+
+
+/* =========================================================
+   PLUG BOARD
+   ========================================================= */
+
+.loader-board {
+    position: absolute;
+
+    right: 35px;
+    top: 70px;
+
+    width: 120px;
+    height: 100px;
+
+    background: #fff;
+
+    border: 2px solid var(--black);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0 15px 35px rgba(23, 23, 20, 0.10);
+
+    z-index: 2;
+}
+
+
+/* Socket */
+
+.socket {
+    width: 38px;
+    height: 48px;
+
+    border: 2px solid var(--border);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.socket span {
+    position: absolute;
+
+    width: 5px;
+    height: 15px;
+
+    background: var(--black);
+
+    border-radius: 5px;
+}
+
+.socket span:first-child {
+    transform: translateX(-7px) rotate(18deg);
+}
+
+.socket span:last-child {
+    transform: translateX(7px) rotate(-18deg);
+}
+
+
+/* =========================================================
+   PLUG
+   ========================================================= */
+
+.loader-plug {
+    position: absolute;
+
+    left: 35px;
+    top: 92px;
+
+    width: 70px;
+    height: 55px;
+
+    z-index: 3;
+
+    animation: plugConnect 2.4s ease-in-out infinite;
+}
+
+
+/* Plug body */
+
+.plug-head {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background: var(--black);
+
+    border-radius: 10px;
+}
+
+
+/* Plug pins */
+
+.plug-pin {
+    position: absolute;
+
+    right: 10px;
+
+    width: 25px;
+    height: 7px;
+
+    background: var(--black);
+
+    border-radius: 5px;
+}
+
+.pin-1 {
+    top: 10px;
+}
+
+.pin-2 {
+    top: 28px;
+}
+
+
+/* =========================================================
+   WIRE
+   ========================================================= */
+
+.loader-wire {
+    position: absolute;
+
+    left: -5px;
+    top: 114px;
+
+    width: 75px;
+    height: 13px;
+
+    background: var(--black);
+
+    border-radius: 20px;
+
+    z-index: 1;
+
+    transform-origin: left center;
+}
+
+
+/* =========================================================
+   ELECTRICITY
+   ========================================================= */
+
+.electricity {
+    position: absolute;
+
+    right: 143px;
+    top: 105px;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    color: var(--green);
+
+    opacity: 0;
+
+    animation: electricFlash 2.4s ease-in-out infinite;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.loader-brand {
+    position: absolute;
+
+    left: 50%;
+    bottom: 5px;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    opacity: 0;
+
+    animation: brandAppear 2.4s ease forwards;
+}
+
+.loader-brand strong {
+    display: block;
+
+    font-family: var(--serif);
+
+    font-size: 30px;
+
+    letter-spacing: -1px;
+}
+
+.loader-brand small {
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: var(--mono);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--gray);
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes plugConnect {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(0);
+    }
+
+    65% {
+        transform: translateX(135px);
+    }
+
+    75% {
+        transform: translateX(135px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes electricFlash {
+
+    0%,
+    55% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    85% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes brandAppear {
+
+    0%,
+    65% {
+        opacity: 0;
+        transform: translate(-50%, 12px);
+    }
+
+    85%,
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .electric-loader {
+        transform: scale(0.8);
+    }
+
+}
 
     .menu-btn {
         width: 34px;
         height: 34px;
     }
 }
-<div id="electric-loader">
-
-    <div class="electric-loader-content">
-
-        <div class="loader-board">
-            <div class="loader-socket socket-one"></div>
-            <div class="loader-socket socket-two"></div>
-        </div>
-
-        <div class="loader-plug">
-
-            <div class="plug-head"></div>
-
-            <div class="plug-pin one"></div>
-            <div class="plug-pin two"></div>
-
-            <div class="plug-wire"></div>
-
-        </div>
-
-        <div class="loader-spark">ϟ</div>
-
-        <div class="loader-glow"></div>
-
-        <div class="loader-logo">
-            <strong>BijliBank</strong>
-            <span>KNOW WHERE YOUR ELECTRICITY GOES</span>
-        </div>
-
-    </div>
-
-</div>
