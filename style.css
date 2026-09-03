@@ -2536,7 +2536,7 @@ footer button:hover {
         height: 34px;
     }
    /* =========================================================
-   BIJLIBANK — ELECTRICITY START LOADER
+   BIJLIBANK STARTING LOADER
    ========================================================= */
 
 #electric-loader {
@@ -2550,7 +2550,7 @@ footer button:hover {
     align-items: center;
     justify-content: center;
 
-    transition: opacity 0.7s ease, visibility 0.7s ease;
+    transition: opacity .6s ease, visibility .6s ease;
 }
 
 #electric-loader.hide {
@@ -2559,123 +2559,124 @@ footer button:hover {
     pointer-events: none;
 }
 
-
-/* Loader area */
-
-.electric-loader {
-    position: relative;
-
-    width: 360px;
-    height: 250px;
+.loader-content {
+    width: 300px;
+    text-align: center;
 }
 
 
-/* =========================================================
-   PLUG BOARD
-   ========================================================= */
+/* LOGO */
 
-.loader-board {
-    position: absolute;
-
-    right: 35px;
-    top: 70px;
-
-    width: 120px;
-    height: 100px;
-
-    background: #fff;
-
-    border: 2px solid var(--black);
-    border-radius: 16px;
-
+.loader-title {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 8px;
 
-    box-shadow: 0 15px 35px rgba(23, 23, 20, 0.10);
+    margin-bottom: 45px;
 
-    z-index: 2;
+    opacity: 0;
+    animation: loaderLogo .5s ease forwards;
+}
+
+.loader-title span {
+    font-size: 25px;
+    color: var(--green);
+}
+
+.loader-title b {
+    font-family: var(--serif);
+    font-size: 27px;
 }
 
 
-/* Socket */
+/* PLUG SCENE */
+
+.plug-scene {
+    position: relative;
+
+    width: 280px;
+    height: 100px;
+
+    margin: auto;
+}
+
+
+/* SOCKET */
 
 .socket {
-    width: 38px;
-    height: 48px;
+    position: absolute;
 
-    border: 2px solid var(--border);
-    border-radius: 50%;
+    right: 10px;
+    top: 22px;
+
+    width: 75px;
+    height: 60px;
+
+    background: white;
+
+    border: 2px solid var(--black);
+    border-radius: 13px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
+    gap: 14px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 .socket span {
-    position: absolute;
-
-    width: 5px;
-    height: 15px;
+    width: 7px;
+    height: 25px;
 
     background: var(--black);
 
     border-radius: 5px;
-}
 
-.socket span:first-child {
-    transform: translateX(-7px) rotate(18deg);
+    transform: rotate(15deg);
 }
 
 .socket span:last-child {
-    transform: translateX(7px) rotate(-18deg);
+    transform: rotate(-15deg);
 }
 
 
-/* =========================================================
-   PLUG
-   ========================================================= */
+/* PLUG */
 
-.loader-plug {
+.plug {
     position: absolute;
 
-    left: 35px;
-    top: 92px;
+    left: 15px;
+    top: 27px;
 
-    width: 70px;
-    height: 55px;
+    width: 65px;
+    height: 50px;
 
     z-index: 3;
 
-    animation: plugConnect 2.4s ease-in-out infinite;
+    animation: plugInsert 2s ease-in-out forwards;
 }
 
-
-/* Plug body */
-
-.plug-head {
+.plug-body {
     position: absolute;
 
     left: 0;
     top: 0;
 
-    width: 45px;
-    height: 45px;
+    width: 43px;
+    height: 50px;
 
     background: var(--black);
 
     border-radius: 10px;
 }
 
-
-/* Plug pins */
-
-.plug-pin {
+.pin {
     position: absolute;
 
-    right: 10px;
+    right: 0;
 
     width: 25px;
     height: 7px;
@@ -2685,192 +2686,201 @@ footer button:hover {
     border-radius: 5px;
 }
 
-.pin-1 {
-    top: 10px;
+.pin1 {
+    top: 12px;
 }
 
-.pin-2 {
-    top: 28px;
+.pin2 {
+    top: 31px;
 }
 
 
-/* =========================================================
-   WIRE
-   ========================================================= */
+/* WIRE */
 
-.loader-wire {
+.wire {
     position: absolute;
 
     left: -5px;
-    top: 114px;
+    top: 46px;
 
     width: 75px;
-    height: 13px;
+    height: 10px;
 
     background: var(--black);
 
     border-radius: 20px;
-
-    z-index: 1;
-
-    transform-origin: left center;
 }
 
 
-/* =========================================================
-   ELECTRICITY
-   ========================================================= */
+/* ELECTRICITY */
 
-.electricity {
+.electric-flow {
     position: absolute;
 
-    right: 143px;
-    top: 105px;
+    right: 72px;
+    top: 15px;
 
-    font-size: 38px;
-    font-weight: 700;
+    display: flex;
+    gap: 4px;
+
+    opacity: 0;
+
+    animation: electricity 2s ease-in-out forwards;
+}
+
+.electric-flow i {
+    font-style: normal;
+
+    font-size: 25px;
+    font-weight: bold;
 
     color: var(--green);
 
-    opacity: 0;
+    animation: spark .45s infinite alternate;
+}
 
-    animation: electricFlash 2.4s ease-in-out infinite;
+.electric-flow i:nth-child(2) {
+    animation-delay: .15s;
+}
 
-    z-index: 5;
+.electric-flow i:nth-child(3) {
+    animation-delay: .3s;
 }
 
 
-/* =========================================================
-   BRAND
-   ========================================================= */
+/* LOADING TEXT */
 
-.loader-brand {
-    position: absolute;
-
-    left: 50%;
-    bottom: 5px;
-
-    transform: translateX(-50%);
-
-    text-align: center;
-
-    opacity: 0;
-
-    animation: brandAppear 2.4s ease forwards;
-}
-
-.loader-brand strong {
-    display: block;
-
-    font-family: var(--serif);
-
-    font-size: 30px;
-
-    letter-spacing: -1px;
-}
-
-.loader-brand small {
-    display: block;
-
-    margin-top: 5px;
+.loading-text {
+    margin-top: 35px;
 
     font-family: var(--mono);
-
-    font-size: 9px;
+    font-size: 10px;
 
     letter-spacing: 3px;
 
     color: var(--gray);
 }
 
+.loading-text span {
+    animation: dots 1s infinite;
+}
+
+
+/* LOADING BAR */
+
+.loading-line {
+    width: 180px;
+    height: 3px;
+
+    margin: 14px auto 0;
+
+    background: var(--border);
+
+    overflow: hidden;
+}
+
+.loading-line div {
+    height: 100%;
+    width: 0;
+
+    background: var(--green);
+
+    animation: loadingBar 2.4s ease forwards;
+}
+
 
 /* =========================================================
-   ANIMATION
+   ANIMATIONS
    ========================================================= */
 
-@keyframes plugConnect {
+@keyframes plugInsert {
 
     0% {
         transform: translateX(0);
     }
 
-    30% {
+    55% {
         transform: translateX(0);
-    }
-
-    65% {
-        transform: translateX(135px);
-    }
-
-    75% {
-        transform: translateX(135px);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(185px);
     }
 }
 
 
-@keyframes electricFlash {
+@keyframes electricity {
 
     0%,
     55% {
         opacity: 0;
-        transform: scale(0.5);
     }
 
-    60% {
-        opacity: 1;
-        transform: scale(1.3);
-    }
-
-    70% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    85% {
-        opacity: 0;
-        transform: scale(0.6);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-@keyframes brandAppear {
-
-    0%,
     65% {
-        opacity: 0;
-        transform: translate(-50%, 12px);
-    }
-
-    85%,
-    100% {
         opacity: 1;
-        transform: translate(-50%, 0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+@keyframes spark {
 
-@media (max-width: 500px) {
-
-    .electric-loader {
-        transform: scale(0.8);
+    from {
+        transform: translateY(-3px);
+        opacity: .4;
     }
 
+    to {
+        transform: translateY(3px);
+        opacity: 1;
+    }
 }
 
-    .menu-btn {
-        width: 34px;
-        height: 34px;
+
+@keyframes loaderLogo {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes loadingBar {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes dots {
+
+    0% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
     }
 }
