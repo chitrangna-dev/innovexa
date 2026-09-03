@@ -2086,8 +2086,15 @@ checkExistingLogin();
 calculateScanResult();
 
 window.addEventListener("load", () => {
+
     setTimeout(() => {
-        document.getElementById("electric-loader")
-            ?.classList.add("hide");
-    }, 2300);
+
+        const loader = document.getElementById("electric-loader");
+
+        if (loader) {
+            loader.classList.add("hide");
+        }
+
+    }, 2600);
+
 });
